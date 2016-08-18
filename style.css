@@ -6,10 +6,8 @@
 /*Header*/
 
 .logo {
-	text-align: right;
-	width: 15%;
-	margin-left: 0;
-	margin-right: 0;
+	text-align: center;
+	width: 60%;
 	padding-left: 0;
 }
 
@@ -78,9 +76,7 @@
 	margin-top: -1em;
 
 }
-.tagline {
-	width: 20%;
-}
+
 .description {
 	margin-left: 3em;
     margin-top: 4em;
@@ -92,10 +88,10 @@
 .about h1 {
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 2em;
-	text-align: right;
+	text-align: left;
 	font-weight: 700;
 	padding-top: 0;
-	margin-right: 2em;
+	margin-right: 0;
 	margin-top: 0;
 	line-height: 1.2em;
 }
@@ -116,6 +112,19 @@
 
 }
 
+.about p a {
+	color: #000;
+	padding: 0 0.5em;
+	text-decoration: none;
+	background: #f6f6f6;
+	transition: all 0.5s ease;
+}
+
+.about p a:hover {
+	color: #fff;
+	background: #FFC136;
+
+}
 /*Recent Work*/
 
 .projects {
@@ -131,7 +140,7 @@
 }
 
 .row2 {
-	margin-top: 2em;
+	margin-top: 0;
 }
 
 .project-title h4,h3 {
@@ -261,4 +270,43 @@
 .details li a:hover {
 	border-bottom: solid  2px #FFC136;
 }
+
+
+/*Footer*/
+
+.footer {
+	margin: 2em auto;
+
 }
+
+.credits-name {
+	color: #808080;
+	font-family: 'Inconsolata', monospace !important;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+
+/*Responsive Media Queries*/
+
+@media screen and (min-width: 48em) {
+
+	.logo {
+	text-align: right;
+	width: 15%;
+	margin-left: 0;
+	margin-right: 0;
+	padding-left: 0;
+}
+
+	.row2 {
+	margin-top: 2em;
+}
+
+	.about h1 {
+		text-align: right;
+		margin-right: 2em;
+	}
+}
+
+
