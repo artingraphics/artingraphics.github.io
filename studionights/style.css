@@ -4,18 +4,32 @@ body {
     background: #fff;
 }
 
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 100%;
+    height: 100%;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover; 
+}
+
 .logo {
     left: 0;
     margin-top: -100px;
     position: absolute;
     margin-left: 6em;
     top: 10%;
-    width: 60%;
+    width: 40%;
 }
 
 .logo h1	{
 	color: #222831;
-	font-size: 1em;
+	font-size: 1.4em;
 	line-height: 200px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
@@ -33,7 +47,7 @@ body {
 
 .logo h2 {
 	margin-top: 4em;
-	margin-left: 8em;
+	margin-left: 2em;
 	font-family: 'Space Mono', serif;
 	font-size: 2em;
 	line-height: 1.5em;
@@ -44,7 +58,7 @@ body {
 .logo h3 {
 	color: #d2d2d2;
 	margin-top: 8em;
-	margin-left: 16em;
+	margin-left: 8em;
 	font-family: 'Space Mono', serif;
 	font-size: 1em;
 	font-weight: 400;
@@ -111,9 +125,9 @@ body {
 }
 
 .logo1 {
-	width: 4%;
-	height: 4%;
-	margin-top: 10em;
+	width: 6%;
+	height: 6%;
+	margin-top: 6em;
 }
 
 .logo1:hover path {
