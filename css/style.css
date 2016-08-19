@@ -158,6 +158,12 @@
 
 }
 
+.project-title p {
+	font-weight: 300;
+	font-family: 'Titillium Web', sans-serif;
+	margin-top: -0.6em;
+}
+
 .project-title h4 {
 	color: #808080;
 	font-size: 0.8em;
@@ -198,7 +204,7 @@
 }
 
 .post-title h3 {
-	line-height: 1.2em;
+	line-height: 1.4em;
 	margin-top: -0.4em;
 	margin-right: 2em;
 	font-weight: 400;
