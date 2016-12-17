@@ -1,5 +1,5 @@
 .content {
-	width: 80%;
+	width: 85%;
 	margin: 0 auto;
 
 	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
@@ -81,7 +81,7 @@
 }
 
 .header .section-content a {
-	color: #404040;
+	color: #808080;
 	text-decoration: none;
 }
 
@@ -99,8 +99,9 @@
 	font-family: 'Inconsolata', monospace !important;
 	text-transform: uppercase;
 }
+
 /*About*/
-.about {
+.currently-section {
 	margin-top: 2em;
 
 }
@@ -121,7 +122,7 @@
 }
 
 
-.about h1 {
+.currently-section h1 {
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 2em;
 	text-align: left;
@@ -131,7 +132,7 @@
 	margin-top: 0;
 	line-height: 1.2em;
 }
-.about p {
+.currently-section p {
 /*	-webkit-column-count: 2;
     -moz-column-count: 2; 
     column-count: 2;
@@ -154,7 +155,7 @@
 	font-weight: 700;
 	font-family: 'Titillium Web', sans-serif;
 }
-.about p a {
+.currently-section p a {
 	color: #000;
 	padding: 0 0.5em;
 	text-decoration: none;
@@ -162,14 +163,13 @@
 	transition: all 0.5s ease;
 }
 
-.about p a:hover {
+.currently-section p a:hover {
 	color: #fff;
 	background: #FFC136;
 
 }
-/*Recent Work*/
 
-.projects {
+.wishlist {
 	margin-left: 3em;
     margin-top: 4em;
     padding-left: 0;
@@ -217,7 +217,7 @@
 	content:'\00B7';padding-right:5px;
 }
 
-.projects a {
+.read a {
 	text-decoration: none;
 	color: #232323;
 	transition: all 0.5s ease;
@@ -226,13 +226,13 @@
 
 }
 
-.projects a:hover {
+.read a:hover {
 	background: #FFC136;
 }
 
 /*Blog*/
 
-.posts {
+.read {
 	padding-left: 0;
 	margin-left: 3em;
     margin-top: 4em;
@@ -275,9 +275,7 @@
 	background: #FFC136;
 }
 
-/*Contact Details*/
-
-.details {
+.current {
 	padding-left: 0;
 	margin-left: 3em;
     margin-top: 4em;
@@ -286,19 +284,27 @@
 
 
 
-.details h4 {
+.current h4, .wishlist h4, .read h4 {
 
-	margin-top: 0;
+	margin-top: 2em;
 	padding-top: 0;
 	
 	color: #808080;
 	font-size: 0.8em;
 	font-family: 'Roboto Slab', serif;
 	font-weight: normal;
-	line-height: 1em;
+	line-height: 0.2em;
 }
 
-.details p {
+.current h3, .wishlist h3, .read h3 {
+	margin-top: -0.4em;
+	padding-top: 0;
+	line-height: 1em;
+
+	font-size: 1em;
+}
+
+.current p {
 
 	margin-top: 0;
 	padding-top: 0;
@@ -310,14 +316,58 @@
 	letter-spacing: 1px;
 }
 
-.details li a {
+.current li a {
 	color: #808080;
 	text-decoration: none;
 }
 
-.details li a:hover {
+.current li a:hover {
 	border-bottom: solid  2px #FFC136;
 }
+
+.book-item {
+	width: 140px;
+	height: 200px;
+	background:  #FFC136;
+	position: relative;
+
+
+}
+
+.book-item::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 8px;
+		right: 0;
+		width: 4px;
+      	background: rgba(0, 0, 0, 0.06);
+
+			-webkit-box-shadow: 1px 0 3px rgba(255, 255, 255, 0.3);
+			-moz-box-shadow:    1px 0 3px rgba(255, 255, 255, 0.3);
+			box-shadow: 		1px 0 3px rgba(255, 255, 255, 0.3);
+
+
+	}
+
+.goodreads {
+	margin-top: 5em;
+
+}
+
+.goodreads a {
+
+	font-size: 0.8em;
+	color: #909090;
+	transition: all 0.5s ease;
+}
+
+.goodreads a:hover {
+	color: #fff;
+	background: #FFC136;
+
+	}
 
 
 /*Footer*/
@@ -333,6 +383,7 @@
 	font-size: 0.8em;
 	text-align: center;
 }
+
 
 
 /*Responsive Media Queries*/
@@ -351,10 +402,20 @@
 	margin-top: 2em;
 }
 
-	.about h1 {
+	.currently-section h1 {
 		text-align: right;
 		margin-right: 2em;
 	}
 }
+
+@media screen and (min-width: 80em) {
+	.content { width: 80%;
+	}
+
+}
+
+
+
+
 
 
