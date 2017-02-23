@@ -100,7 +100,7 @@
 	text-transform: uppercase;
 }
 
-/*About*/
+
 .currently-section {
 	margin-top: 2em;
 
@@ -132,29 +132,7 @@
 	margin-top: 0;
 	line-height: 1.2em;
 }
-.currently-section p {
-/*	-webkit-column-count: 2;
-    -moz-column-count: 2; 
-    column-count: 2;
 
-    -webkit-column-gap: 1em;
-    -moz-column-gap: 1em; 
-    column-gap: 1em;*/
-
-    margin-top: 0;
-    padding-top: 0;
-    text-align: justify;
-
-    font-family: 'Titillium Web', sans-serif;
-
-}
-
-#name {
-	text-align: left;
-	font-size: 1.5em;
-	font-weight: 700;
-	font-family: 'Titillium Web', sans-serif;
-}
 .currently-section p a {
 	color: #000;
 	padding: 0 0.5em;
@@ -169,52 +147,23 @@
 
 }
 
+.row2 {
+	margin-top: 0;
+}
+
+
+.current {
+	padding-left: 0;
+	margin-left: 3em;
+    margin-top: 4em;
+    list-style-type: none;
+}
+
 .wishlist {
 	margin-left: 3em;
     margin-top: 4em;
     padding-left: 0;
     list-style-type: none;
-}
-
-.project-title {
-	margin-top: 0;
-	padding-top: 0;
-}
-
-.row2 {
-	margin-top: 0;
-}
-
-.project-title h4,h3 {
-	margin-top: 0;
-	padding-top: 0;
-	line-height: 1em;
-}
-
-.project-title h3 {
-	margin-top: -0.4em;
-	line-height: 1.2em;
-	font-weight: 400;
-	font-family: 'Titillium Web', sans-serif;
-	letter-spacing: 1px;
-
-}
-
-.project-title p {
-	font-weight: 300;
-	font-family: 'Titillium Web', sans-serif;
-	margin-top: -0.6em;
-}
-
-.project-title h4 {
-	color: #808080;
-	font-size: 0.8em;
-	font-weight: normal;
-	font-family: 'Roboto Slab', serif;
-}
-
-.project-title h4 span:before {
-	content:'\00B7';padding-right:5px;
 }
 
 .read a {
@@ -230,7 +179,7 @@
 	background: #FFC136;
 }
 
-/*Blog*/
+
 
 .read {
 	padding-left: 0;
@@ -238,50 +187,6 @@
     margin-top: 4em;
     list-style-type: none;
 }
-
-.post-title h4,h3 {
-	margin-top: 0;
-	padding-top: 0;
-	line-height: 1em;
-}
-
-.post-title h3 {
-	line-height: 1.4em;
-	margin-top: -0.4em;
-	margin-right: 2em;
-	font-weight: 400;
-	font-family: 'Titillium Web', sans-serif;
-	letter-spacing: 1px;
-
-}
-
-.post-title h4 {
-	color: #808080;
-	font-size: 0.8em;
-	font-weight: normal;
-	font-family: 'Roboto Slab', serif;
-}
-
-.posts a {
-	text-decoration: none;
-	color: #232323;
-	transition: all 0.5s ease;
-	/*padding: 0 0.5em;
-	margin: 0 -0.5em*/
-
-}
-
-.posts a:hover {
-	background: #FFC136;
-}
-
-.current {
-	padding-left: 0;
-	margin-left: 3em;
-    margin-top: 4em;
-    list-style-type: none;
-}
-
 
 
 .current h4, .wishlist h4, .read h4 {
@@ -300,29 +205,9 @@
 	margin-top: -0.4em;
 	padding-top: 0;
 	line-height: 1em;
-
 	font-size: 1em;
-}
 
-.current p {
-
-	margin-top: 0;
-	padding-top: 0;
-	margin-right: 4em;
-	
-	line-height: 1.2em;
-	font-weight: 400;
-	font-family: 'Titillium Web', sans-serif;
-	letter-spacing: 1px;
-}
-
-.current li a {
-	color: #808080;
-	text-decoration: none;
-}
-
-.current li a:hover {
-	border-bottom: solid  2px #FFC136;
+	transition: all 0.2s ease;
 }
 
 .book-item {
@@ -331,9 +216,15 @@
 	background:  #FFC136;
 	position: relative;
 
-
+		opacity: 1;
+		transition: all 0.2s ease;
 }
 
+
+/*.book-item:hover {
+	opacity: 0.3;
+}
+*/
 .book-item::before {
 		content: "";
 		position: absolute;
@@ -349,7 +240,21 @@
 			box-shadow: 		1px 0 3px rgba(255, 255, 255, 0.3);
 
 
-	}
+}
+
+.single-book a {
+	text-decoration: none;
+	color: #303030
+}
+.single-book:hover .book-item {
+	opacity: 0.3;
+}
+
+.single-book:hover h3 {
+	color: #FFC136;
+}
+
+
 
 .goodreads {
 	margin-top: 5em;
@@ -367,7 +272,7 @@
 	color: #fff;
 	background: #FFC136;
 
-	}
+}
 
 
 /*Footer*/
